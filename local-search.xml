@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Typecho搭建记录</title>
+    <link href="/2020/07/29/Typecho%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/"/>
+    <url>/2020/07/29/Typecho%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</url>
+    
+    <content type="html"><![CDATA[<p>简单总结一下建站的经过吧，为之后出现相同的场景时提供参考~</p><h1 id="首先是环境"><a href="#首先是环境" class="headerlink" title="首先是环境"></a>首先是环境</h1><h5 id="这里选择了lnmp1-7环境，选择官网上的命令搭建"><a href="#这里选择了lnmp1-7环境，选择官网上的命令搭建" class="headerlink" title="这里选择了lnmp1.7环境，选择官网上的命令搭建"></a>这里选择了lnmp1.7环境，选择官网上的命令搭建</h5><p>具体php，Mysql等版本号见探针<br>#接下来的设置便是问题多发区域<br>简单总结下遇到的问题</p><ol><li>创建网站的方式<br>应该使用lnmp提供的vhost add，以免增添不必要的麻烦</li><li>修改默认界面<strong>仅在需要使用IP地址访问网站时修改</strong><br>需要更改/usr/local/nginx/conf下的niginx.conf文件，把root /home/wwwroot/default中的地址改为网页存放的地址</li><li>默认界面生效**?存疑**<br>5分钟后会更新存放在default下的.user.ini文件，该文件默认隐藏，待其更新后才会生效，也可手动删除并重启生效</li><li>网站的存放<br>需要存放在/home/wwwroot下，这里也是网上各类教程所指的“网站的根目录”，注意与/root区别开，否则会报错（存疑）</li><li>Typecho后台404<br>在nginx.conf中，直接<code>include enable-php.conf;</code>替换为<code>include enable-php-pathinfo.conf;</code>与<a href="http://docs.typecho.org/servers">官网</a>解决方案不同，但是成功了 </li></ol><h4 id="2020-11-21更新"><a href="#2020-11-21更新" class="headerlink" title="2020.11.21更新"></a>2020.11.21更新</h4><p>原站点服务器打算另作他用，故将此记录迁移至此</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>站点搭建</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>测试</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>因为害怕，所以不能停下来</title>
+    <link href="/2020/04/27/%E5%9B%A0%E4%B8%BA%E5%AE%B3%E6%80%95%EF%BC%8C%E6%89%80%E4%BB%A5%E4%B8%8D%E8%83%BD%E5%81%9C%E4%B8%8B%E6%9D%A5/"/>
+    <url>/2020/04/27/%E5%9B%A0%E4%B8%BA%E5%AE%B3%E6%80%95%EF%BC%8C%E6%89%80%E4%BB%A5%E4%B8%8D%E8%83%BD%E5%81%9C%E4%B8%8B%E6%9D%A5/</url>
+    
+    <content type="html"><![CDATA[<p>这算是第一篇博客吧。<br>在写这些时，我感觉我的拖延症已经到了无可救药的地步。我希望写下这些能够激励我，让我有继续前进的动力。<br>早些时候，因为沉迷PCR，以及想尝试一些新鲜玩意。导致我欠下大量的课程，进度也拉下一大截。在拉下的同时，又不想接受这个现实，便选择用游戏麻痹自己。<br>如今醒悟过来，这也许时害怕的缘故。<br>害怕失败，害怕麻烦，害怕失去朋友，又害怕落后。<br>这林林总总的害怕加起来就化为逃避现实的动力，游戏便成为了逃避现实的借口。<br>但是，害怕并不是停下来的理由。<br>盲目的张望，只会增加害怕的程度。<br>因为害怕，所以不能停下来。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>随记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>随记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Markdown_test</title>
+    <link href="/2020/04/16/Markdown_test/"/>
+    <url>/2020/04/16/Markdown_test/</url>
+    
+    <content type="html"><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p><em>斜体文本</em><br><em>斜体文本</em><br><strong>粗体文本</strong><br><strong>粗体文本</strong><br><strong><em>粗斜体文本</em></strong><br><strong><em>粗斜体文本</em></strong><br>分割线</p><hr><p><del>删除线</del><br><u>带下划线文本</u></p><!--要注明的文本--><ul><li>第一项</li></ul><ul><li>第二项</li></ul><ul><li>第三项</li></ul><ol><li>第一项：<ul><li>第一项嵌套的第一个元素</li><li>第一项嵌套的第二个元素</li></ul></li><li>第二项：<ul><li>第二项嵌套的第一个元素</li><li>第二项嵌套的第二个元素<blockquote><p>最外层</p><blockquote><p>第一层嵌套</p><blockquote><p>第二层嵌套<br>列表中使用区块</p></blockquote></blockquote></blockquote></li></ul></li></ol><ul><li><p>第一项</p><blockquote><p>1<br>2</p></blockquote></li><li><p>第二项<br>代码区块<br>代码区块使用 4 个空格或者一个制表符（Tab 键）</p></li></ul><pre><code class="hljs arduino"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><span class="hljs-function"></span>&#123;<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hello world&quot;</span>);<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;&#125;</code></pre><p>​    </p><p>链接<a href="http://182.254.165.225/">橙子</a><br><a href="http://182.254.165.225/">http://182.254.165.225/</a><br><img src="https://img2.gelbooru.com/images/ea/c3/eac390c87f1c86267cd1f85338b0ff13.png" alt="图片测试Miku" title="标题Miku"></p><p>这个链接用 1 作为网址变量 <a href="https://img2.gelbooru.com/samples/79/ea/sample_79ea1e951818850a9a1fc1130e94742b.jpg">另一个Miku</a>.<br>然后在文档的结尾为变量赋值（网址）</p><table><thead><tr><th>表头</th><th>表头</th></tr></thead><tbody><tr><td>单元格</td><td>单元格</td></tr><tr><td>单元格</td><td>单元格</td></tr></tbody></table><p><a href="https://www.runoob.com/markdown/md-advance.html">更多技巧</a></p><p>本文摘自<a href="https://www.runoob.com/markdown/md-tutorial.html">菜鸟教程</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>站点搭建</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>测试</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
